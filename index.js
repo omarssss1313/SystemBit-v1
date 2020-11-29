@@ -33,7 +33,7 @@ const dateFormat = require('dateformat');
 
 client.on("guildCreate", (guild) => {
        let channel = client.channels.get(guild.channels.filter(c => c.permissionsFor(client.user).has("SEND_MESSAGES") && c.type === "text").map(r => r.id)[0])    
-       channel.send(`**قنــاتنا علـى اليوتيوب https://www.youtube.com/channel/UCP6BTyTx2yoxcYcNpYcUZjA**`)
+       channel.send(`**شكرا لاضافت البوت الى سيرفرك**`)
 });
 
 
@@ -146,12 +146,6 @@ const developers = "الايدي بتاعك هنا"
 
          لتحويل رصيد الى شخص
         - ${prefix}credits <المبلغ> <منشن للشخص> 
-
-
-
-
-**رابط شرح كيفيه عمل البوت على قناتي في اليوتيوب**
-https://youtu.be/_ikLmvEU5rE
 
          
 `)
